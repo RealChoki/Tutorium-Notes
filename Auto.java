@@ -47,17 +47,20 @@ public class Auto {
 
     //? Main-Methode
     public static void main(String[] args) {
-        //TODO Erstellen von Auto-Objekt mit dem Parameterkonstruktor
+        //TODO Erstellen sie ein Auto-Objekt namens meinAuto mit dem Parameterkonstruktor 
+        //TODO (Geschwindigkeit = 0, Marke = "Volkswagen", Farbe = "Blau")
         Auto meinAuto = new Auto("Volkswagen", "Blau", 0);
 
-        //TODO Ausgabe der Attribute vor den Änderungen
+        //TODO Geben sie die Attribute des Autos aus
         System.out.println("Vor Änderungen:");
         System.out.println("Mein Auto - Marke: " + meinAuto.getMarke() +
                 ", Farbe: " + meinAuto.getFarbe() +
                 ", Geschwindigkeit: " + meinAuto.getGeschwindigkeit());
 
-        //TODO Beschleunigen und Bremsen des Autos
+        //TODO Beschleunigen sie das Auto um 30 km/h
         meinAuto.beschleunigen(30);
+
+        //TODO Bremsen sie das Auto um 10 km/h
         meinAuto.bremsen(10);
 
         //TODO Lackieren des Autos
@@ -66,7 +69,7 @@ public class Auto {
         //TODO Marke des Autos irgendwie ändern ?
         meinAuto.setMarke("Tesla");
 
-        //TODO Ausgabe der Attribute nach den Änderungen
+        //TODO Geben sie die Attribute des Autos nach den Änderungen aus
         System.out.println("\nNach Änderungen:");
         System.out.println("Mein Auto - Marke: " + meinAuto.getMarke() +
                 ", Farbe: " + meinAuto.getFarbe() +

@@ -143,5 +143,29 @@ public class Notes {
             printPattern(numberOfRows);
         }
     }
+
+    //! Sichtbarkeit public, private, default
+    // (public) Elemente sind von jeder anderen Klasse aus zugänglich auch andere pakete.
+    // (private) Private Elemente sind nur innerhalb derselben Klasse zugänglich. 
+    // (default) Elemente sind nur innerhalb des Pakets zugänglich, in dem sie deklariert wurden.
+
+    //! Shortcuts
+    // CTRl + C --> Kopieren
+    // CTRl + V --> Einfügen
+    // CTRl + X --> Ausschneiden
+    // CTRl + F --> Code suchen
+    // CTRl + D --> Wort an mehrere stellen gleichzeitig andern
+    // CTRL + Z --> Rückgängig machen
+    // CTRL + Y --> Wiederholen
+    // CTRL + pfeiltaste links / rechts --> Wort für Wort springen
     
+    // ALT + Links click --> In verschiednen Stellen im Code gleichzeitg schreiben
+    // ALT + pfeiltaste oben / unten --> Code Nach oben / unten verschieben
+    // ALT + Shift + Pfeiltaste oben / unten --> Code Duplizieren
+    
+    // pos1 --> Anfang der Zeile
+    // Ende --> Ende der Zeile
+
+    // tab --> Einrücken
+    // Shift + tab --> Einrückung entfernen
 }
