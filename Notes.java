@@ -114,6 +114,18 @@ public class Notes {
                 if (num % 2 == 0) {
                     System.out.println(num);
                 }
+                if (num % 2 == 0) {
+                    System.out.println(num);
+                }
+                if (num % 2 == 0) {
+                    System.out.println(num);
+                }
+                if (num % 2 == 0) {
+                    System.out.println(num);
+                }
+                if (num % 2 == 0) {
+                    System.out.println(num);
+                }
             }
         }
     }
@@ -121,26 +133,26 @@ public class Notes {
 
     //! PRINT PATTERN
     public class PrintPattern {
-
         // Method to print a pattern based on the number of rows
-        public static void printPattern(int rows) {
-            // Outer loop for the number of rows
-            for (int i = 0; i < rows; i++) {
+        public static void printPattern(int numberOfRows) {
+            // Outer loop for the number of numberOfRows
+            for (int i = 0; i < numberOfRows; i++) {
                 // Inner loop for printing asterisks in each row
                 for (int j = 0; j <= i; j++) {
                     System.out.print("*");
                 }
-                // Move to the next line after each row is printed
                 System.out.println();
+                // Move to the next line after each row is printed
             }
         }
     
         public static void main(String[] args) {
             // Set the number of rows to 5
-            int numberOfRows = 5;
-    
-            // Call the method to print the pattern with the specified number of rows
-            printPattern(numberOfRows);
+
+        int numberOfRows = 5;
+        
+        // Call the method to print the pattern with the specified number of rows
+        printPattern(numberOfRows);
         }
     }
 
@@ -149,10 +161,12 @@ public class Notes {
     // (private) Private Elemente sind nur innerhalb derselben Klasse zugänglich. 
     // (default) Elemente sind nur innerhalb des Pakets zugänglich, in dem sie deklariert wurden.
 
-    //! Shortcuts
-    // CTRl + C --> Kopieren
-    // CTRl + V --> Einfügen
-    // CTRl + X --> Ausschneiden
+
+
+    
+
+    //!
+    
     // CTRl + F --> Code suchen
     // CTRl + D --> Wort an mehrere stellen gleichzeitig andern
     // CTRL + Z --> Rückgängig machen
