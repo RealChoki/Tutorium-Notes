@@ -1,4 +1,4 @@
-package übungen;
+package auto;
 public class Auto {
     //? Attribute
     private String marke;

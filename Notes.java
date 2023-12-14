@@ -194,16 +194,25 @@ public class Notes {
 
     // Oft beinhaltet der Konstruktor der Unterklasse somit alle
     // Attribute der Oberklasse sowie die eigenen
+    public class Vehicle {
+        private String manufacturer;
+        private int year;
 
-    public Vehicle(String manufacturer, int year) {
-        this.manufacturer = manufacturer;
-        this.year = year;
+        public Vehicle(String manufacturer, int year) {
+            this.manufacturer = manufacturer;
+            this.year = year;
+        }
     }
 
-    public Car(String manufacturer, int year, int numberDoors, boolean isConvertible) {
-        super(manufacturer, year);
-        this.numberDoors = numberDoors;
-        this.isConvertible = isConvertible;
+    public class Car extends Vehicle {
+        private int numberDoors;
+        private boolean isConvertible;
+        
+        public Car(String manufacturer, int year, int numberDoors, boolean isConvertible) {
+            super(manufacturer, year);
+            this.numberDoors = numberDoors;
+            this.isConvertible = isConvertible;
+        }
     }
 
     Car car = new Car("VW", 2008, 4, false);

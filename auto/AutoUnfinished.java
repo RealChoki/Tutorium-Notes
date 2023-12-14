@@ -1,4 +1,4 @@
-package übungen;
+package auto;
 public class AutoUnfinished {
     //TODO 3 Attribute (Marke, Farbe, Geschwindigkeit) kreieren
     private String marke;
