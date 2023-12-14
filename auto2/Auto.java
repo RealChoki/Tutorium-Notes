@@ -4,7 +4,6 @@ package auto2;
 // TODO: Erstelle eine abgeleitete Klasse namens "Auto", die von der Klasse "Fahrzeug" erbt.
 // TODO: Füge der Klasse "Auto" ein zusätzliches Objekt Attribut "anzahlTueren" hinzu.
 public class Auto extends Fahrzeug {
-    // TODO: Implementiere das zusätzliche Attribut
     int anzahlTueren;
 
     // TODO: Implementiere einen Konstruktor für die Klasse "Auto", der sowohl die Object Attribute der Basisklasse als auch das neue Attribut "anzahlTueren" initialisiert.
