@@ -168,4 +168,74 @@ public class Notes {
 
     // tab --> Einrücken
     // Shift + tab --> Einrückung entfernen
+
+    //! Vererbung
+    //Vererbung basiert auf der Idee, dass "Obereklassen" ihren Untereklassen Variablen und Methoden vererben.
+
+    //! Konstruktor Vererbung
+    // Sofern kein parameterloser Konstruktor für eine Oberklasse
+    // existiert, benötigt die Unterklasse einen Konstruktor, in dem
+    // explizit auch mit super(<Parameter>) der Konstruktor der
+    // Oberklasse aufgerufen wird
+
+    // Oft beinhaltet der Konstruktor der Unterklasse somit alle
+    // Attribute der Oberklasse sowie die eigenen
+
+    public Vehicle(String manufacturer, int year) {
+        this.manufacturer = manufacturer;
+        this.year = year;
+    }
+
+    public Car(String manufacturer, int year, int numberDoors, boolean isConvertible) {
+        super(manufacturer, year);
+        this.numberDoors = numberDoors;
+        this.isConvertible = isConvertible;
+    }
+
+    Car car = new Car("VW", 2008, 4, false);
+
+    //! Methoden Signatur
+    // Name der Methode. Anzahl, Typ und Typreihenfolge der Parameter
+
+    //! Methoden überschreiben
+    // Bereitstellen verschiedener Funktionalitäten durch gleichnamige Methoden in Ober- und Unterklasse
+    // Mit @Override kommentieren um Fehler zu vermeiden und verständlicher zu machen
+    // Bedingung: gleiche Signatur + Rückgabetyp
+    public class Animal {
+        public void makeSound() {
+            System.out.println("The animal makes a sound.");
+        }
+    }
+    public class Dog extends Animal {
+        @Override
+        public void makeSound() {
+            System.out.println("The dog barks.");
+        }
+    }
+
+    //! Methoden überladen
+    // Bereitstellen gleicher/ähnlicher Funktionalität durch gleichnamige Methoden mit verschiedenen Parameterlisten
+    // Bedingung: unterschiedliche Parameter bei selbem Methodennamen
+
+    //! final
+    // final Variable/Attribut: Der Wert ist nicht mehr veränderbar
+    // final Methode: Methode kann in abgeleiteten Klassen nicht überschrieben werden
+    // final Klasse: Die Klasse kann keine Kindklasse/Subklasse haben
+
+    //! static
+    // Mit static gekennzeichnete Attribute/Methoden gehören zu einer Klasse anstatt zu einem Objekt.
+    // werden mit dem Klassennamen aufgerufen
+    // static int variableName;
+    // ClassName.variableName;
+
+
+    //! Nicht static
+    // Nicht static gekennzeichnete Attribute/Methoden gehören zu einem Objekt anstatt zu einer Klasse.
+    // werden mit dem Objektnamen aufgerufen
+    // int attribute;
+    // objectName.attribute;
+
+
+
+
 }
