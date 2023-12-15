@@ -5,7 +5,7 @@ package auto2;
 // TODO: Füge der Klasse "Lkw" ein zusätzliches Attribut "ladung" hinzu.
 public class Lkw extends Fahrzeug {
     // TODO: Implementiere das zusätzliche Attribut
-    double ladung;
+    private double ladung;
 
     // TODO: Implementiere einen Konstruktor für die Klasse "Lkw", der sowohl die Object Attribute der Basisklasse als auch das neue Attribut "ladung" initialisiert.
     public Lkw(String marke, int baujahr, double ladung) {

@@ -3,8 +3,8 @@ package auto2;
 
 // TODO: Definiere eine Basisklasse namens "Fahrzeug" mit den folgenden Objekt Attributen (marke, baujahr) und einen klassen attribute (static) "anzahlFahrzeuge".
 public class Fahrzeug {
-    String marke;
-    int baujahr;
+    private String marke;
+    private int baujahr;
     static int anzahlFahrzeuge;
 
     // TODO: Implementiere den Konstruktor und initialisiere "anzahlFahrzeuge" im konstruktor.
