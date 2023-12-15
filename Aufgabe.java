@@ -63,7 +63,193 @@ public class Aufgabe {
 
             // TODO: Versuche die Methode "starten" für beide Fahrzeuge zu überschreiben. Was passiert? und warum?
             
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////7
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////7
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////7
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////7
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////7
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////7
+    
+
+    //! Vererbung
+    // Vererbung basiert auf der Idee, dass "Obereklassen" ihren Untereklassen Variablen und Methoden vererben.
+    // public class Car extends Vehicle
+
+    //! Konstruktor Vererbung
+    // Sofern kein parameterloser Konstruktor für eine Oberklasse
+    // existiert, benötigt die Unterklasse einen Konstruktor, in dem
+    // explizit auch mit super(<Parameter>) der Konstruktor der
+    // Oberklasse aufgerufen wird
+
+    // Oft beinhaltet der Konstruktor der Unterklasse somit alle
+    // Attribute der Oberklasse sowie die eigenen
+    public class Vehicle {
+        private String manufacturer;
+        private int year;
+
+        public Vehicle(String manufacturer, int year) {
+            this.manufacturer = manufacturer;
+            this.year = year;
+        }
+    }
+
+    public class Car extends Vehicle {
+        private int numberDoors;
+        private boolean isConvertible;
+        
+        public Car(String manufacturer, int year, int numberDoors, boolean isConvertible) {
+            super(manufacturer, year);
+            this.numberDoors = numberDoors;
+            this.isConvertible = isConvertible;
+        }
+    }
+
+    Car car = new Car("VW", 2008, 4, false);
+
+    //! Methoden Signatur
+    // Name der Methode. Anzahl, Typ und Typreihenfolge der Parameter
+
+    //! Methoden überschreiben
+    // Bereitstellen verschiedener Funktionalitäten durch gleichnamige Methoden in Ober- und Unterklasse
+    // Mit @Override kommentieren um Fehler zu vermeiden und verständlicher zu machen
+    // Bedingung: gleiche Signatur + Rückgabetyp
+    public class Animal {
+        public void makeSound() {
+            System.out.println("The animal makes a sound.");
+        }
+    }
+    public class Dog extends Animal {
+        @Override
+        public void makeSound() {
+            System.out.println("The dog barks.");
+        }
+    }
+
+    //! Methoden überladen
+    // Bereitstellen gleicher/ähnlicher Funktionalität durch gleichnamige Methoden mit verschiedenen Parameterlisten
+    // Bedingung: unterschiedliche Parameter bei selbem Methodennamen
+    public class Auto{
+        private String marke;
+        private String farbe;
+        private int geschwindigkeit;
+
+        public Auto(String marke, String farbe, int geschwindigkeit) {
+            this.marke = marke;
+            this.farbe = farbe;
+            this.geschwindigkeit = geschwindigkeit;
+        }
+
+        public Auto() {
             
+        }
+
+        public void setFarbe(String farbe) {
+            this.farbe = farbe;
+        }
+
+        public void setGeschwindigkeit(int geschwindigkeit) {
+            this.geschwindigkeit = geschwindigkeit;
+        }
+
+        public void setMarke(String marke) {
+            this.marke = marke;
+        }
+
+        public static void main(String[] args) {
+            Auto meinAuto = new Auto("Volkswagen", "Blau", 0);
+            
+            Auto meinAuto2 = new Auto();
+            meinAuto2.setMarke("Volkswagen");
+            meinAuto2.setFarbe("Blau");
+            meinAuto2.setGeschwindigkeit(0);
+        }
+    }
+
+
+    //! final
+    // final Variable/Attribut: Der Wert ist nicht mehr veränderbar
+    final int blub = 10;
+    blub = 20; // Fehler
+
+    // final Methode: Methode kann in abgeleiteten Klassen nicht überschrieben werden
+    class A {
+        final void blub() {
+            System.out.println("blub in A");
+        }
+    }
+    
+    class B extends A {
+        @Override
+        void blub() {
+            System.out.println("blub in B");
+        }
+    }
+
+    // final Klasse: Die Klasse kann keine Kindklasse/Subklasse haben
+    final class FinalKlasse {
+        void blub() {
+            System.out.println("blub in FinalKlasse");
+        }
+    }
+    
+    class Unterklasse extends FinalKlasse {
+        @Override
+        void blub() {
+            System.out.println("blub in Unterklasse");
+        }
+    }
+
+    //! static
+    // Mit static gekennzeichnete Attribute/Methoden gehören zu einer Klasse anstatt zu einem Objekt.
+    // werden mit dem Klassennamen aufgerufen
+    class MyClass {
+        static int myVariable;
+    
+        static void myMethod() {
+            System.out.println("This is a static method.");
+        }
+    }
+    
+    public class Main {
+        public static void main(String[] args) {
+            MyClass.myVariable = 10;
+            System.out.println(MyClass.myVariable); // Ausgabe: 10
+    
+            MyClass.myMethod(); // Ausgabe: This is a static method.
+        }
+    }
+
+
+    //! Nicht static
+    // Nicht static gekennzeichnete Attribute/Methoden gehören zu einem Objekt anstatt zu einer Klasse.
+    // werden mit dem Objektnamen aufgerufen
+    class MyClass2 {
+        private int myVariable2; 
+    
+        void myMethod2() { 
+            System.out.println("This is a non-static method.");
+        }
+    
+        public void setMyVariable2(int myVariable2) {
+            this.myVariable2 = myVariable2;
+        }
+    
+        public int getMyVariable2() {
+            return myVariable2;
+        }
+    }
+    
+    public class Main2 {
+        public static void main(String[] args) {
+            MyClass2 myObject = new MyClass2();
+    
+            myObject.setMyVariable2(10);
+            System.out.println(myObject.getMyVariable2()); // Ausgabe: 10
+    
+            myObject.myMethod2(); // Ausgabe: This is a non-static method.
+        }
+    }
 }
 
 
