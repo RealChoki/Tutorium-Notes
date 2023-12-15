@@ -184,7 +184,8 @@ public class Notes {
     // Shift + tab --> Einrückung entfernen
 
     //! Vererbung
-    //Vererbung basiert auf der Idee, dass "Obereklassen" ihren Untereklassen Variablen und Methoden vererben.
+    // Vererbung basiert auf der Idee, dass "Obereklassen" ihren Untereklassen Variablen und Methoden vererben.
+    // public class Car extends Vehicle
 
     //! Konstruktor Vererbung
     // Sofern kein parameterloser Konstruktor für eine Oberklasse
