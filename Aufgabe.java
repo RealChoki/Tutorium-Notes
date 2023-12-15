@@ -64,6 +64,25 @@ public class Aufgabe {
             // TODO: Versuche die Methode "starten" für beide Fahrzeuge zu überschreiben. Was passiert? und warum?
             
 
+    //? End ausgabe beispiel:
+    /*
+    Erstes Fahrzeug:
+    Marke: VW
+    Baujahr: 2022
+    Anzahl Türen: 4
+
+    Zweites Fahrzeug:
+    Marke: Mercedes
+    Baujahr: 2021
+    Ladung: 10.5 Tonnen
+
+    Gesamtanzahl der Fahrzeuge: 2
+
+    Das Fahrzeug wurde gestartet.
+    Das Fahrzeug wurde gestartet.
+    */
+
+    
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////7
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////7
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////7
