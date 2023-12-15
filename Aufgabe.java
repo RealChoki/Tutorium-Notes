@@ -52,6 +52,8 @@ public class Aufgabe {
   
         // TODO: Definiere eine "main" Methode.
             // TODO: In der "main" Methode, erstelle Instanzen von "Auto" und "Lkw".
+            // Auto Bsp -> Marke = "VW", Baujar = 2022, Anzahltüren = 4
+            // Lkw Bsp -> Marke = "Mercedes", Baujar = 2021, Ladung = 10.5
 
             // TODO: Zeige die Informationen der erstellten Fahrzeuge an "infoAnzeigen" mit Uberschriften "Erstes Fahrzeug:" und "Zweites Fahrzeug:".
 

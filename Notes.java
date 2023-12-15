@@ -239,24 +239,127 @@ public class Notes {
     //! Methoden überladen
     // Bereitstellen gleicher/ähnlicher Funktionalität durch gleichnamige Methoden mit verschiedenen Parameterlisten
     // Bedingung: unterschiedliche Parameter bei selbem Methodennamen
+    public class Auto{
+        private String marke;
+        private String farbe;
+        private int geschwindigkeit;
+
+        public Auto(String marke, String farbe, int geschwindigkeit) {
+            this.marke = marke;
+            this.farbe = farbe;
+            this.geschwindigkeit = geschwindigkeit;
+        }
+
+        public Auto() {
+            
+        }
+
+        public void setFarbe(String farbe) {
+            this.farbe = farbe;
+        }
+
+        public void setGeschwindigkeit(int geschwindigkeit) {
+            this.geschwindigkeit = geschwindigkeit;
+        }
+
+        public void setMarke(String marke) {
+            this.marke = marke;
+        }
+
+        public static void main(String[] args) {
+            Auto meinAuto = new Auto("Volkswagen", "Blau", 0);
+            
+            Auto meinAuto2 = new Auto();
+            meinAuto2.setMarke("Volkswagen");
+            meinAuto2.setFarbe("Blau");
+            meinAuto2.setGeschwindigkeit(0);
+        }
+    }
+
 
     //! final
     // final Variable/Attribut: Der Wert ist nicht mehr veränderbar
+    final int blub = 10;
+    blub = 20; // Fehler
+
     // final Methode: Methode kann in abgeleiteten Klassen nicht überschrieben werden
+    class A {
+        final void blub() {
+            System.out.println("blub in A");
+        }
+    }
+    
+    class B extends A {
+        @Override
+        void blub() {
+            System.out.println("blub in B");
+        }
+    }
+
     // final Klasse: Die Klasse kann keine Kindklasse/Subklasse haben
+    final class FinalKlasse {
+        void blub() {
+            System.out.println("blub in FinalKlasse");
+        }
+    }
+    
+    class Unterklasse extends FinalKlasse {
+        @Override
+        void blub() {
+            System.out.println("blub in Unterklasse");
+        }
+    }
 
     //! static
     // Mit static gekennzeichnete Attribute/Methoden gehören zu einer Klasse anstatt zu einem Objekt.
     // werden mit dem Klassennamen aufgerufen
-    // static int variableName;
-    // ClassName.variableName;
+    class MyClass {
+        static int myVariable;
+    
+        static void myMethod() {
+            System.out.println("This is a static method.");
+        }
+    }
+    
+    public class Main {
+        public static void main(String[] args) {
+            MyClass.myVariable = 10;
+            System.out.println(MyClass.myVariable); // Ausgabe: 10
+    
+            MyClass.myMethod(); // Ausgabe: This is a static method.
+        }
+    }
 
 
     //! Nicht static
     // Nicht static gekennzeichnete Attribute/Methoden gehören zu einem Objekt anstatt zu einer Klasse.
     // werden mit dem Objektnamen aufgerufen
-    // int attribute;
-    // objectName.attribute;
+    class MyClass2 {
+        private int myVariable2; 
+    
+        void myMethod2() { 
+            System.out.println("This is a non-static method.");
+        }
+    
+        public void setMyVariable2(int myVariable2) {
+            this.myVariable2 = myVariable2;
+        }
+    
+        public int getMyVariable2() {
+            return myVariable2;
+        }
+    }
+    
+    public class Main2 {
+        public static void main(String[] args) {
+            MyClass2 myObject = new MyClass2();
+    
+            myObject.setMyVariable2(10);
+            System.out.println(myObject.getMyVariable2()); // Ausgabe: 10
+    
+            myObject.myMethod2(); // Ausgabe: This is a non-static method.
+        }
+    }
 
 
 
