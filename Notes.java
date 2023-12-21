@@ -362,6 +362,49 @@ public class Notes {
         }
     }
 
+    //! Mehrere Klassen in einer Datei
+    // Nur eine Klasse darf public sein und muss den Dateinamen tragen
+    // File: MyClass.java
+    // Untere Klasse hat zugriff auf mitglieder der Oberen klasse
+    // Obere Klasse hat keinen zugriff auf mitglieder der Unteren klasse ohne instanz
+
+    // Top-level public class
+    public class MyClass {
+        public void myClassMethod() {
+            System.out.println("Method in MyClass");
+        }
+    }
+
+    // Non-public class in the same file
+    class AnotherClass {
+        public void anotherClassMethod(MyClass myClassInstance) {
+            myClassInstance.myClassMethod(); // Accessing method in MyClass
+            System.out.println("Method in AnotherClass");
+        }
+    }
+
+    //! Geschachtelte Klassen in einer Datei
+    // Nur eine Klasse darf public sein und muss den Dateinamen tragen
+    // File: OuterClass.java
+    // Inner Klasse hat zugriff auf mitglieder der Außeren klasse
+    // Außere Klasse hat keinen zugriff auf mitglieder der Inneren klasse ohne Instanz
+    public class OuterClass {
+        private int myVar = 10;
+    
+        // Inner class
+        class InnerClass {
+            public void accessOuter() {
+                System.out.println("Value from outer class: " + myVar);
+            }
+        }
+    
+        public static void main(String[] args) {
+            OuterClass outer = new OuterClass();
+            OuterClass.InnerClass inner = outer.new InnerClass();
+            inner.accessOuter();
+        }
+    }
+
 
 
 
