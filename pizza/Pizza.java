@@ -3,7 +3,7 @@ package pizza;
 public class Pizza {
     private String name;
     private double preis;
-    private static int anzahlPizzas = 0;
+    public static int anzahlPizzas = 0;
 
     public Pizza(String name, double preis) {
         this.name = name;

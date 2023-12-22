@@ -11,9 +11,21 @@ public class Main {
         System.out.println("Erste Pizza:");
         margherita.infoAnzeigen();
 
+        margherita.addZutate("Basilikum"); // Add a new ingredient to the Margherita pizza
+        System.out.println("\nNach dem Hinzufügen / nicht Hinzufügen");
+        margherita.infoAnzeigen();
+
+
+        
+
         System.out.println("\nZweite Pizza:");
         pepperoni.infoAnzeigen();
 
-        System.out.println("\nGesamtanzahl der Pizzas: " + Pizza.getAnzahlPizzas());
+        pepperoni.addZutate("Oliven"); // Add a new ingredient to the Pepperoni pizza
+        System.out.println("\nNach dem Hinzufügen / nicht Hinzufügen");
+        pepperoni.infoAnzeigen();
+
+        int anzahlpizzas = Pizza.anzahlPizzas;
+        System.out.println("\nGesamtanzahl der Pizzas: " + anzahlpizzas);
     }
 }
