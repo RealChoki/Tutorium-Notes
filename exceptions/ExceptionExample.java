@@ -1,18 +1,6 @@
 package exceptions;
 public class ExceptionExample {
-    // In Java gibt es zwei Haupttypen von Exceptions: Checked und Unchecked Exceptions.
 
-    // Checked Exceptions sind Ausnahmen, die während der Kompilierzeit erkannt werden. 
-    // Sie erfordern eine explizite Behandlung in Ihrem Code, entweder durch try-catch-Block oder durch die Weitergabe der Ausnahme an die aufrufende Methode (mit 'throws').
-
-    // Unchecked Exceptions sind Ausnahmen, die während der Laufzeit auftreten. 
-    // Sie sind in der Regel das Ergebnis von Programmierfehlern, wie z.B. NullPointer Exceptions oder Division durch Null.
-
-    // 'try' ist ein Schlüsselwort, das einen Block von Code umschließt, in dem eine Ausnahme auftreten könnte.
-    // 'catch' ist ein Schlüsselwort, das verwendet wird, um die Ausnahme zu fangen und zu behandeln, die im try-Block aufgetreten ist.
-    // 'finally' ist ein Schlüsselwort, das einen Block von Code umschließt, der immer ausgeführt wird, unabhängig davon, ob eine Ausnahme aufgetreten ist oder nicht.
-
-    // Hier ist ein einfaches Beispiel:
     public static void main(String[] args) {
         try {
             // Versuchen Sie, eine Operation durchzuführen, die eine Ausnahme auslösen könnte
