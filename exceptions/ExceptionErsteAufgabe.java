@@ -7,7 +7,7 @@ public class ExceptionErsteAufgabe {
 
         try {
             // TODO: Versuchen Sie, auf das nicht existierende vierte Element des Arrays zuzugreifen
-            int outOfBounds = array[3];
+            int outOfBounds = array[2];
         } catch (ArrayIndexOutOfBoundsException e) {
             // TODO: Fangen Sie die Ausnahme ab und geben Sie eine Fehlermeldung aus die ansagt, dass das vierte Element nicht existiert
             System.out.println("Es existiert kein viertes Element");
