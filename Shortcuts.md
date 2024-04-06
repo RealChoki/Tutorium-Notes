@@ -30,7 +30,7 @@ blub blub blub blub blub blub blub blub blub blub blub
 
 ## 5. CTRL + Pfeiltasten (Wortnavigation)
 ## 6. CTRL + SHIFT + Pfeilasten (Selektieren)
-### Navigieren sie zu jede zahl und loschen sie es nur mit keyboard
+### Navigieren sie zu jede zahl und loschen sie es nur mit Tastatur
 Moooooooooo 3 MOOOOOOOOOOOOO 56 MMMMOOOOOOOOO 03
 0 MOOOO 445321 MOOOOOOOOOO 49183 MOOOOOOOOO 3234 MOOO 
 0394222222222234888888329999999477774266666643 23462  346234 23468
@@ -46,70 +46,62 @@ Moooooooooo 3 MOOOOOOOOOOOOO 56 MMMMOOOOOOOOO 03
    
 
 ## 6. ALT + Linksklick (Mehrere Cursor)
-   **Code-Schnipsel:**
-   ```java
-   // Ausgangscode
-   int a = 10;
-   int b = 20;
-   int c = 30;
-   ```
+### Andern sie bitte alle zahlen zu '00'
+12   45             67              90   87
+            56              89
+23   34             78              09   98
 
-   **Aufgabe:** Erstelle mit ALT + Linksklick mehrere Cursor und ändere die Werte von `a`, `b` und `c` gleichzeitig.
 
 ## 7. ALT + Pfeiltasten (Codebewegung)
-   **Code-Schnipsel:**
-   ```java
-   // Ausgangscode
-   public class Beispiel {
-       public static void main(String[] args) {
-           System.out.println("Hallo");
-           System.out.println("Welt");
-       }
-   }
-   ```
+## Bringen sie Jorgen zum sieg
 
-   **Aufgabe:** Benutze ALT + Nach-oben-Pfeil, um die gesamte Zeile `System.out.println("Hallo");` über `System.out.println("Welt");` zu verschieben.
+                   (__)    
+           `\------(oo)
+             ||    (__)
+             ||w--||  
 
-## 8. ALT + Umschalt + Pfeiltasten (Code duplizieren)
-   **Code-Schnipsel:**
-   ```java
-   // Ausgangscode
-   public class Beispiel {
-       public static void main(String[] args) {
-           System.out.println("Hallo");
-           System.out.println("Welt");
-       }
-   }
-   ```
 
-   **Aufgabe:** Dupliziere den gesamten Block `System.out.println("Hallo");` und `System.out.println("Welt");` mit ALT + Umschalt + Nach-unten-Pfeil.
 
-## 9. Pos1/Ende-Tasten (Zeilennavigation)
-   **Code-Schnipsel:**
-   ```java
-   // Beispiel-Code-Schnipsel
-   public class Beispiel {
-       public static void main(String[] args) {
-           // Cursor ist hier
-           System.out.println("Hallo");
-           System.out.println("Welt");
-       }
-   }
-   ```
 
-   **Aufgabe:** Benutze Pos1, um den Cursor an den Anfang der Zeile zu bewegen, und Ende, um ihn ans Ende der Zeile zu bewegen.
 
-## 10. Tab/Umschalt + Tab (Einrückung)
-    **Code-Schnipsel:**
-    ```java
-    // Ausgangscode
-    for (int i = 0; i < 5; i++) {
-        for (int j = 0; j < 3; j++) {
-            // Cursor ist hier
-            System.out.println(i * j);
-        }
-    }
-    ```
 
-    **Aufgabe:** Verwende Tab, um die Zeile `System.out.println(i * j);` einzurücken, und Umschalt + Tab, um die Einrückung zu entfernen.
-```
+
+
+
+
+
+
+
+
+
+⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀
+⢸⡇⠀⣶⡆⠀⢰⣶⡆⠀⢰⣶⠀⠀⣶⣶⠀⠀⣶⡆⠀⢰⣶⡆⠀⢰⣾⡇⠀
+⢸⣿⡇⠀⢸⣿⡇⠀⢸⣿⠀⠀⣿⣿⠀⠀⣿⡇⠀⢸⣿⡇⠀⢸⣿⠀⢸⡇⠀
+⢸⡇⠈⣿⡇⠀⢸⣿⡇⠀⢹⣿⠀⠀⣿⣿⠀⠈⣿⡇⠀⢸⣿⡇⠀⢹⣿⡇⠀
+⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀
+⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀
+⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀
+⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀
+⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀
+⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀
+⢸⣇⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣸⡇⠀
+⢸⡏⠛⠛⠻⠷⠶⠶⢶⣦⣤⣤⣤⣤⣤⣤⣤⣤⣴⡶⠶⠶⠾⠟⠛⠛⢹⡇⠀
+⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀
+⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀
+⠈⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠁⠀
+
+
+## 8. ALT + SHIFT + Pfeiltasten (Code duplizieren)
+### Bringen sie Jorgens umgebung mehr zum Leben
+
+             (__)     \|/            \|/          \|/     \|/
+     `\------(oo)
+       ||    (__)  \|/    \|/     \|/      \|/                       \|/
+       ||w--||         \|/     \|/                      \|/
+   \|/         \|/                   \|/   \|/
+
+
+
+## 9. Tab/Umschalt + Tab (Einrückung)
+###
+
