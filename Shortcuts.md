@@ -1,7 +1,28 @@
 # Szenarien zur Übung von Code-Shortcuts
 
 ## 1. CTRL + F (Suchen)
-### Finden sie bitte der Rechschreib flalsche wort "progremmierung".
+### Bitte finden Sie das falsch geschriebene Wort "Progremmierung".
+
+programmierung progremmierung programmierung programmierung programmierung
+programmierung programmierung programmierung programmierung programmierung
+programmierung programmierung programmierung programmierung programmierung
+programmierung programmierung programmierung progremmierung programmierung
+programmierung programmierung programmierung programmierung programmierung
+programmierung progremmierung programmierung programmierung programmierung
+programmierung programmierung programmierung programmierung programmierung
+programmierung programmierung programmierung programmierung programmierung
+programmierung programmierung progremmierung programmierung programmierung
+programmierung programmierung programmierung programmierung programmierung
+programmierung programmierung programmierung programmierung programmierung
+programmierung programmierung programmierung programmierung programmierung
+programmierung programmierung programmierung programmierung programmierung
+progremmierung programmierung programmierung programmierung programmierung
+programmierung programmierung programmierung programmierung programmierung
+programmierung programmierung programmierung programmierung programmierung
+programmierung programmierung programmierung programmierung programmierung
+programmierung programmierung programmierung programmierung programmierung
+programmierung programmierung programmierung progremmierung programmierung
+programmierung programmierung programmierung programmierung programmierung
 programmierung progremmierung programmierung programmierung programmierung
 programmierung programmierung programmierung programmierung programmierung
 programmierung programmierung programmierung programmierung programmierung
@@ -9,7 +30,13 @@ programmierung programmierung programmierung progremmierung programmierung
 programmierung programmierung programmierung programmierung programmierung
 
 ## 2. CTRL + D (Mengen Selektion)
-### Andern sie jedes 'blob' zu ein 'blub'
+### Ändern Sie jedes 'blob' zu 'blub'.
+
+blub blub blub blub blub blub blub blub blub blub blub
+blub blub blub blub blub blub blub blub blub blub blub
+blub blub blub blub blub blub blub blub blub blub blub
+blub blub blub blub blub blub blub blub blub blub blub
+blub blub blub blub blub blub blub blub blub blub blub
 blub blub blub blub blub blub blub blub blub blub blub
 blub blub blub blub blub blub blub blub blub blub blub
 blub blub blub blub blub blub blub blub blub blub blub
@@ -19,7 +46,7 @@ blub blub blub blub blub blub blub blub blub blub blub
 
 ## 3. CTRL + Z (Rückgängig machen)
 ## 4. CTRL + Y (Wiederholen)
-### Loschen sie jedes grass stuck (z.B. mit CTRL + D) machen sie es ruckganig und wiederholden sie es
+### Jürgen hat zu viel zum essen gehabt. Löschen Sie jedes "Grasstück" (z. B. mit CTRL + D), machen Sie es rückgängig und wiederholen Sie es.
  
              (__)     \|/            \|/          \|/     \|/
      `\------(oo)
@@ -27,42 +54,40 @@ blub blub blub blub blub blub blub blub blub blub blub
        ||w--||         \|/     \|/                      \|/
    \|/         \|/                   \|/   \|/
  
+## 5. CTRL + Arrow keys (Wortnavigation)
+## 6. CTRL + Backspace key (Wort löschen)
+## 7. CTRL + SHIFT + Arrow keys (Selektieren)
+### Navigieren Sie zu jeder Zahl und löschen Sie sie nur mit der Tastatur.
 
-## 5. CTRL + Pfeiltasten (Wortnavigation)
-## 6. CTRL + SHIFT + Pfeilasten (Selektieren)
-### Navigieren sie zu jede zahl und loschen sie es nur mit Tastatur
 Moooooooooo 3 MOOOOOOOOOOOOO 56 MMMMOOOOOOOOO 03
 0 MOOOO 445321 MOOOOOOOOOO 49183 MOOOOOOOOO 3234 MOOO 
-0394222222222234888888329999999477774266666643 23462  346234 23468
+0394222222222234888888329999999477774266666643 23462 346234 23468
 
-## 7. CTRL + C (Kopieren)
-## 8. CTRL + V (Einfügen)
-## 10. CTRL + X (Auschneiden)
-### Jorgen ist einsam... hol ihn paar freunde
+## 8. CTRL + C (Kopieren)
+## 9. CTRL + V (Einfügen)
+## 10. CTRL + A (Alles Selektieren)
+## 11. CTRL + X (Auschneiden)
+### Jürgen ist einsam... hol ihm ein paar Freunde.
+
              (__)    
      `\------(oo)
        ||    (__)
        ||w--||     
    
+## 12. ALT + Left Click (Mehrere Cursor)
+### Ändern Sie alle Zahlen zu '00'.
 
-## 6. ALT + Linksklick (Mehrere Cursor)
-### Andern sie bitte alle zahlen zu '00'
 12   45             67              90   87
             56              89
 23   34             78              09   98
 
-
-## 7. ALT + Pfeiltasten (Codebewegung)
-## Bringen sie Jorgen zum sieg
+## 13. ALT + Arrow keys (Codebewegung)
+## Bringen Sie Jürgen zum Sieg.
 
                    (__)    
            `\------(oo)
              ||    (__)
              ||w--||  
-
-
-
-
 
 
 
@@ -90,9 +115,8 @@ Moooooooooo 3 MOOOOOOOOOOOOO 56 MMMMOOOOOOOOO 03
 ⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀
 ⠈⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠁⠀
 
-
-## 8. ALT + SHIFT + Pfeiltasten (Code duplizieren)
-### Bringen sie Jorgens umgebung mehr zum Leben
+## 14. ALT + SHIFT + Pfeiltasten (Code duplizieren)
+### Bringen Sie Jürgens Umgebung mehr zum Leben.
 
              (__)     \|/            \|/          \|/     \|/
      `\------(oo)
@@ -100,8 +124,14 @@ Moooooooooo 3 MOOOOOOOOOOOOO 56 MMMMOOOOOOOOO 03
        ||w--||         \|/     \|/                      \|/
    \|/         \|/                   \|/   \|/
 
+## 15. TAB (Einrückung)
+## 16. TAB + SHIFT (Einrückung verringern)
+### Bewegen Sie den Pfad zu 3, dann zu -3 und wieder zu 0.
+  
+                                ↓
+                                ↓
+                                ↓
+                                ↓
 
-
-## 9. Tab/Umschalt + Tab (Einrückung)
-###
+       -3      -2      -1       0       1       2       3
 
