@@ -1,162 +1,138 @@
 # Java Notizen
 
+## Allgemein Methoden
+
+### Was ist eine Methode?
+Eine Methode in Java ist eine Sammlung von Anweisungen, die eine bestimmte Aufgabe ausführen. Sie können Code in Methoden organisieren, um ihn wiederzuverwenden und zu strukturieren.
+- **Sichtbarkeit** (`public`): Gibt an, von wo aus die Methode aufgerufen werden kann.
+- **Rückgabetyp** (`int`): Bestimmt den Typ des Werts, den die Methode zurückgibt. Wenn die Methode nichts zurückgibt schrieben wir `void`.
+- **Methodenname** (`berechneSumme`): Der Name, der verwendet wird, um die Methode aufzurufen.
+- **Parameterliste** (`int zahl1, int zahl2`): Die Liste der Parameter, die die Methode erwartet.
+```java
+public int berechneSumme(int zahl1, int zahl2) {
+    int summe = zahl1 + zahl2;
+    return summe;
+}
+```
+
+### Wie definiere ich eine Methode mit/ohne Parameter(n)?
+Um eine Methode ohne Parameter zu definieren, verwendest du die folgende Syntax:
+```java
+public void meineMethode() {
+    // Code hier
+}
+```
+Und um eine Methode mit Parametern zu definieren, gibst du die Parameter in den Klammern nach dem Methodennamen an:
+```java
+public void meineMethode(int param1, String param2) {
+    // Code hier
+}
+```
+
+### Wie funktioniert ein Methodenaufruf?
+Um eine Methode aufzurufen, verwendest du einfach den Namen der Methode gefolgt von Klammern, in denen du gegebenenfalls die Argumente für die Parameter angibst. Zum Beispiel:
+```java
+meineMethode();
+meineMethode(42, "Hallo");
+```
+
+### Welche Kommentar-Typen gibt es in Java?
+In Java gibt es zwei Haupttypen von Kommentaren:
+- Einzeilige Kommentare mit `//`, die nur für eine Zeile gelten.
+- Mehrzeilige Kommentare zwischen `/*` und `*/`, die für mehrere Zeilen gelten.
+- Javadoc Diese Kommentare beginnen mit `/**` und enden mit `*/`. Javadoc verwendet spezielle Tags die mit `@` anfangen.
+```java
+// Dies ist ein einzeiliger Kommentar.
+
+/*
+Dies ist ein mehrzeiliger Kommentar.
+Er erstreckt sich über mehrere Zeilen.
+*/
+
+/**
+ * Dies ist ein Javadoc-Kommentar für die Methode.
+ * Es gibt detaillierte Informationen über die Methode,
+ * einschließlich ihrer Parameter und Rückgabewerte.
+ * 
+ * @param param1 Eine Beschreibung des ersten Parameters
+ * @param param2 Eine Beschreibung des zweiten Parameters
+ * @return Eine Beschreibung des Rückgabewerts
+ */
+public int meineMethode(int param1, String param2) {
+    // Code hier
+    return 42;
+}
+```
+
 ## Allgemein Arrays
 
 ### Explizit:
+- Wenn wir ein leeres Array mit 3 freien Plätzen haben:
 ```java
 int[] arrA = new int[3];
 ```
 
+- können wir jedem freien Platz einen Wert zuweisen:
+```java
+arrA[0] = 7;
+arrA[1] = 8;
+arrA[2] = 9;
+```
+
 ### Implizit:
+- Aber wir können auch direkt beim Erstellen des Arrays Werte zuweisen:
 ```java
 int[] arrB = {7, 8, 9};
 ```
 
-## Allgemein Mehrdimensionale Arrays
+## Allgemein mehrdimensionalen Array
+
+### Explizit:
+- Wenn wir ein leeres 2D-Array mit 3 Reihen und 2 Spalten haben:
 ```java
 int[][] arr = new int[3][2];
+```
+
+- können wir jedem freien Platz einen Wert zuweisen:
+```java
+arr[0][0] = 1;
+arr[0][1] = 2;
+arr[1][0] = 3;
+arr[1][1] = 4;
+arr[2][0] = 5;
+arr[2][1] = 6;
+```
+
+### Implizit:
+- Aber wir können auch direkt beim Erstellen des Arrays Werte zuweisen:
+```java
 int[][] arr3x2 = {{1, 2}, {2, 3}, {3, 4}};
-```
-
-### Declaring an empty multidimensional array
-```java
-int[][] emptyMultiArray;
-```
-
-### Initializing the array with dimensions
-```java
-emptyMultiArray = new int[3][];  // 3 rows, but columns are not specified yet
-```
-
-### Initializing each row with different lengths
-```java
-emptyMultiArray[0] = new int[3];
-emptyMultiArray[1] = new int[3];
-emptyMultiArray[2] = new int[2];
 ```
 
 ## Allgemein Loops
 
+### Enhanced for-loop:
+- `int number`: Hier erstellen wir eine Variable, die jedes Element in unserem Array repräsentiert.
+- `numbers`: Hier wählen wir das Array aus, das wir durchlaufen möchten.
 ```java
-int[] array = {2023, 5, 16, -42, 0, -99};
+int[] numbers = {5, 10, 15};
 int sum1 = 0;
-int sum2 = 0;
 
-// Enhanced for-loop
-for (int number : array) {
+for (int number : numbers) {
     sum1 += number;
 }
-
-// Traditional for-loop
-for (int i = 0; i < arr.length; i++) {
-    sum2 += arr[i];
-}
 ```
 
-## Aufgabe
+### Traditional for-loop:
+- `int i = 0`: Dies ist der Startpunkt der Schleife. Die Schleife beginnt beim Index 0 des Arrays.
+- `i < numbers.length`: Dies ist der Endpunkt der Schleife. Die Schleife wird fortgesetzt, solange der Index `i` kleiner ist als die Länge des Arrays. `numbers.length` gibt 3 zurück.
+- `i++`: Dies ist der Schritt, den die Schleife bei jedem Durchgang macht. Hier wird der Zähler `i` um eins erhöht.
 ```java
-int[][] matrixArr = {
-        {9, 2, 5, 1},
-        {2, 7, 1, 8},
-        {2, 1, 3, 6},
-        {1, 8, 5, 0},
-};
+int[] numbers = {5, 10, 15};
+int sum2 = 0;
 
-/*
-Gewünschte Ausgabe:
-9 2 5 1
-2 7 1 8
-2 1 3 6
-1 8 5 0 
-*/
-
-for (int rowI = 0; rowI < matrixArr.length; rowI++) {
-    for (int colI = 0; colI < matrixArr[rowI].length; colI++) {
-        System.out.print(matrixArr[rowI][colI] + " ");
-    }
-    System.out.println();
-}
-
-for (int[] row : matrixArr) {
-    for (int value : row) {
-        System.out.print(value + " ");
-    }
-    System.out.println();
-}
-```
-
-## Sum of Array
-```java
-public class SumOfArray {
-    public static void main(String[] args) {
-        int[] array = {1, 2, 3, 4, 5};
-        int sum = 0;
-
-        for (int num : array) {
-            sum += num;
-        }
-
-        System.out.println("Sum of array elements: " + sum);
-    }
-}
-```
-
-## Find Max Value
-```java
-public class MaxValueInArray {
-    public static void main(String[] args) {
-        int[] array = {12, 45, 67, 23, 9};
-        int max = array[0];
-
-        for (int num : array) {
-            if (num > max) {
-                max = num;
-            }
-        }
-
-        System.out.println("Maximum value in array: " + max);
-    }
-}
-```
-
-## Print Even Number
-```java
-public class EvenNumbers {
-    public static void main(String[] args) {
-        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        
-        for (int num : array) {
-            if (num % 2 == 0) {
-                System.out.println(num);
-            }
-        }
-    }
-}
-```
-
-## Print Pattern
-```java
-public class PrintPattern {
-    // Method to print a pattern based on the number of rows
-    public static void printPattern(int numberOfRows) {
-        // Outer loop for the number of numberOfRows
-        for (int i = 0; i < numberOfRows; i++) {
-            // Inner loop for printing asterisks in each row
-            for (int j = 0; j <= i; j++) {
-                System.out.print("*");
-            }
-            System.out.println();
-            // Move to the next line after each row is printed
-        }
-    }
-
-    public static void main(String[] args) {
-        // Set the number of rows to 5
-        int numberOfRows = 5;
-        
-        // Call the method to print the pattern with the specified number of rows
-        printPattern(numberOfRows);
-    }
+for (int i = 0; i < numbers.length; i++) {
+    sum2 += numbers[i];
 }
 ```
 
