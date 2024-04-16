@@ -106,7 +106,7 @@ Moooooooooo 3 MOOOOOOOOOOOOO 56 MMMMOOOOOOOOO 03
    34             78              09   
 
 ## 14. ALT + UP OR DOWN Arrow keys (Codebewegung)
-## Bringen Sie Jürgen zum Sieg. Markieren sie dafür Jürgen, halten 
+### Bringen Sie Jürgen zum Sieg. Markieren sie dafür Jürgen, halten 
 ### sie ALT gedrückt und bewegen sie ihn mit DOWN Arrow key.
 
                    (__)    
