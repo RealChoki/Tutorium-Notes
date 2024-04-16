@@ -96,8 +96,8 @@ Moooooooooo 3 MOOOOOOOOOOOOO 56 MMMMOOOOOOOOO 03
        ||w--||     
    
 ## 13. ALT + Left Click (Mehrere Cursor)
-### Um alle Zahlen zu '00' zu ändern, halten Sie die ALT 
-### gedrückt und LEFT CLICK Sie entweder vor oder hinter jede Zahl.
+### Um alle Zahlen zu '00' zu ändern, halten Sie die ALT Taste
+### gedrückt und drücken sie LEFT CLICK entweder vor oder hinter jede Zahl.
 ### Anschließend können Sie mit den Pfeiltasten Ihren Cursor 
 ### bewegen und gleichzeitig an mehreren Stellen schreiben.
 
@@ -143,7 +143,7 @@ Moooooooooo 3 MOOOOOOOOOOOOO 56 MMMMOOOOOOOOO 03
 ## 15. ALT + SHIFT + Pfeiltasten (Code duplizieren)
 ### Um Jürgens Umgebung mehr zum Leben zu erwecken, markieren Sie
 ### Jürgen und seine Umgebung, halten Sie dabei die SHIFT + ALT 
-### gedrückt und drücken Sie die Pfeiltaste nach oben oder unten.
+### Tasten gedrückt und drücken Sie die Pfeiltaste nach oben oder unten.
 
              (__)     \|/            \|/          \|/     \|/
      `\------(oo)
