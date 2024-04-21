@@ -136,6 +136,39 @@ for (int i = 0; i < numbers.length; i++) {
 }
 ```
 
+### While-Schleife:
+Die While-Schleife führt einen Block von Code aus, solange eine bestimmte Bedingung wahr ist.
+
+```java
+int[] numbers = {5, 10, 15};
+int sum3 = 0;
+int i = 0; // Initialisierung des Zählers
+
+while (i < numbers.length) { // Bedingung für die Schleife
+    sum3 += numbers[i]; // Code, der in jedem Durchgang ausgeführt wird
+    i++; // Inkrementierung des Zählers für den nächsten Durchgang
+}
+```
+
+In diesem Beispiel wird der Block von Code innerhalb der While-Schleife so lange ausgeführt, wie `i` kleiner ist als die Länge des Arrays `numbers`. In jedem Durchgang wird die Summe `sum3` um das aktuelle Element `numbers[i]` erhöht, und der Zähler `i` wird inkrementiert.
+
+### Do-While-Schleife:
+Die Do-While-Schleife führt einen Block von Code mindestens einmal aus und überprüft dann eine Bedingung, um zu entscheiden, ob der Block wiederholt werden soll.
+
+```java
+int[] numbers = {5, 10, 15};
+int sum4 = 0;
+int i = 0; // Initialisierung des Zählers
+
+do {
+    sum4 += numbers[i]; // Code, der in jedem Durchgang ausgeführt wird
+    i++; // Inkrementierung des Zählers für den nächsten Durchgang
+} while (i < numbers.length); // Bedingung für die Schleife
+```
+
+In diesem Beispiel wird der Block von Code innerhalb der Do-While-Schleife mindestens einmal ausgeführt, bevor die Bedingung `i < numbers.length` überprüft wird. Wenn die Bedingung wahr ist, wird der Block wiederholt, andernfalls wird die Schleife beendet.
+
+
 ## Sichtbarkeit public, private, default
 (public) Elemente sind von jeder anderen Klasse aus zugänglich auch andere Pakete.
 (private) Private Elemente sind nur innerhalb derselben Klasse zugänglich.
