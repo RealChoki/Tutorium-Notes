@@ -5,7 +5,7 @@ public class Kontrollstrukturen3 {
 
         //TODO: Verwenden Sie den ternären Operator, um zu überprüfen, ob die Zahl gerade oder ungerade ist.
         //TODO: Weisen Sie das Ergebnis der Variablen "result" zu.
-        String result = (number % 2 == 0) ? "gerade" : "ungerade";
+        String result = number % 2 == 0 ? "gerade" : "ungerade";
 
         //TODO: Geben Sie das Ergebnis aus.
         System.out.println("Die Zahl " + number + " ist " + result + ".");
