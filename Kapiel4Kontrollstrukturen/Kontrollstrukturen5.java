@@ -8,22 +8,10 @@ public class Kontrollstrukturen5 {
      * @return Das Ergebnis gemäß Wahrheitstabelle
      */
     public static boolean evaluateBs(boolean x1, boolean x2, boolean x3) {
-        if (!x1 && !x2 && !x3) {
+        if (!x1 && !x2 && !x3 || !x1 && !x2 && x3 || !x1 && x2 && !x3 || x1 && x2 && !x3 || x1 && x2 && x3) {
             return false;
-        } else if (!x1 && !x2 && x3) {
-            return false;
-        } else if (!x1 && x2 && !x3) {
-            return false;
-        } else if (!x1 && x2 && x3) {
+        } else {
             return true;
-        } else if (x1 && !x2 && !x3) {
-            return true;
-        } else if (x1 && !x2 && x3) {
-            return true;
-        } else if (x1 && x2 && !x3) {
-            return false;
-        } else { // (x1 && x2 && x3)
-            return false;
         }
     }
 
