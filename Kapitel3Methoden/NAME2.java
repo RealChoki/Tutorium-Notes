@@ -1,5 +1,3 @@
-
-
 public class NAME2 {
     public static void main(String[] args) {
         //TODO: Erstellen sie eine Variable namens "myFirstname" und weisen sie ihr ihren vorname zu.
@@ -13,8 +11,8 @@ public class NAME2 {
     }
 
     //TODO: Fügen sie beide Parameter hinzu, die den Vornamen und den Nachnamen enthalten.
-    public static void name(String myFirstname, String myLastname) {
+    public static void name(String a, String b) {
         //TODO: Geben sie ihren Vor- und Nachnamen aus.
-        System.out.println("Mein Name ist: " + myFirstname + " " + myLastname);
+        System.out.println("Mein Name ist: " + a + " " + b);
     }
 }
