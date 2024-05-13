@@ -5,7 +5,7 @@ public class Kontrollstrukturen2 {
 
         //TODO: Schreiben Sie eine for-Schleife, die die Zahlen von 1 bis 5 durchläuft.
         //TODO: Addieren Sie jede Zahl zur Summe hinzu.
-        for (int i = 0; i <= 5; i++) {
+        for (int i = 1; i <= 5; i++){
             sum += i;
         }
 
@@ -14,3 +14,4 @@ public class Kontrollstrukturen2 {
     }
 }
 
+// 1 + 2 + 3 + 4 + 5 = 15
