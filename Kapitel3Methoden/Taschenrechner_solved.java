@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Taschenrechner {
+public class Taschenrechner_solved{
 
     /**
      * Führt die Addition zweier ganzer Zahlen aus.
