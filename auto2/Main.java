@@ -26,6 +26,7 @@ public class Main {
         meinAuto.starten();
         meinLkw.starten();
 
-        // TODO: Versuche die Methode "starten" für beide Fahrzeuge zu überschreiben. Was passiert? warum? Wie kannst du es korregieren ?
+        // TODO: Versuche die Methode "starten" für beide Fahrzeuge zu überschreiben. Damit "Das Auto / Lkw wurde gestartet." ausgegeben wird. 
+        // TODO: Was passiert? warum? Wie kannst du es korregieren ?
     }
 }

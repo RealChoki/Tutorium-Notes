@@ -14,7 +14,7 @@ public class Lkw extends Fahrzeug {
         this.ladung = ladung;
     }
 
-    // TODO: Überschreibe die Methode "infoAnzeigen()" in der Klasse "Lkw", um auch die Ladung auszugeben.
+    // TODO: Überschreibe "Override" die Methode "infoAnzeigen()" in der Klasse "Auto", um auch die Ladung auszugeben.
     // TODO: Verwende die Methode "infoAnzeigen()" der Oberklasse mit "super.infoAnzeigen()" um die werte (Marke, Baujahr) zu bekommen.
     @Override
     public void infoAnzeigen() {
