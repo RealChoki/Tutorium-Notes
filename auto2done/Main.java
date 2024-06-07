@@ -1,5 +1,22 @@
 // TODO: package bestimmen
 package auto2done;
+/* Die Ausgabe kann wie folgt aussehen:
+
+ * Erstes Fahrzeug:
+ * Marke: VW
+ * Baujahr: 2022
+ * Anzahl Türen: 4
+ * 
+ * Zweites Fahrzeug:
+ * Marke: Mercedes
+ * Baujahr: 2021
+ * Ladung: 10.5 Tonnen
+
+ * Gesamtanzahl der Fahrzeuge: 2
+
+ * Das Auto wurde gestartet.
+ * Der Lkw wurde gestartet.
+ */
 
 // TODO: Definiere eine Basisklasse namens "Main" mit einer "main" Methode.
 public class Main {
