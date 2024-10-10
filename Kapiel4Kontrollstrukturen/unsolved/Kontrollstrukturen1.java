@@ -1,5 +1,5 @@
 package unsolved;
-public class Kontrollstrukturen {
+public class Kontrollstrukturen1 {
     /* 
      * Die Ausgabe kann wie folgt aussehen wenn num1 = 20 und num2 = 10:
      * 20 ist größer als 10.
