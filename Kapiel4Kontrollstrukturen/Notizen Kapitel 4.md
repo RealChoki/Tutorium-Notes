@@ -5,6 +5,7 @@
 ### Enhanced for-loop:
 - `int number`: Hier erstellen wir eine Variable, die jedes Element in unserem Array repräsentiert.
 - `numbers`: Hier wählen wir das Array aus, das wir durchlaufen möchten.
+
 ```java
 int[] numbers = {5, 10, 15};
 int sum1 = 0;
@@ -15,49 +16,51 @@ for (int number : numbers) {
 ```
 
 ### Traditional for-loop:
-- `int i = 0`: Dies ist der Startpunkt der Schleife. Die Schleife beginnt beim Index 0 des Arrays.
-- `i < numbers.length`: Dies ist der Endpunkt der Schleife. Die Schleife wird fortgesetzt, solange der Index `i` kleiner ist als die Länge des Arrays. `numbers.length` gibt 3 zurück.
+- `int i = 1`: Dies ist der Startpunkt der Schleife. Die Schleife beginnt bei 1.
+- `i < limit`: Dies ist der Endpunkt der Schleife. Die Schleife wird fortgesetzt, solange der Index `i`  kleiner oder gleich dem Limit ist.
 - `i++`: Dies ist der Schritt, den die Schleife bei jedem Durchgang macht. Hier wird der Zähler `i` um eins erhöht.
-```java
-int[] numbers = {5, 10, 15};
-int sum2 = 0;
 
-for (int i = 0; i < numbers.length; i++) {
-    sum2 += numbers[i];
+```java
+int limit = 5;
+
+for (int i = 1; i <= limit; i++) {
+    System.out.println(i);
 }
 ```
+
+In diesem Beispiel wird die Schleife von 1 bis zum `Limit` (5) durchlaufen und gibt die Werte 1, 2, 3, 4 und 5 aus.
 
 ### While-Schleife:
-Die While-Schleife führt einen Block von Code aus, solange eine bestimmte Bedingung wahr ist.
+- `int i = 1`: Dies ist der Startpunkt der Schleife. Die Schleife beginnt bei 1.
+- `i <= limit`: Dies ist die Bedingung für die Schleife. Die Schleife wird fortgesetzt, solange der Zähler `i` kleiner oder gleich dem Limit ist.
+- `i++`: Dies ist der Schritt, den die Schleife bei jedem Durchgang macht. Hier wird der Zähler `i` um eins erhöht.
 
 ```java
-int[] numbers = {5, 10, 15};
-int sum3 = 0;
-int i = 0; // Initialisierung des Zählers
+int limit = 5;
+int i = 1; 
 
-while (i < numbers.length) { // Bedingung für die Schleife
-    sum3 += numbers[i]; // Code, der in jedem Durchgang ausgeführt wird
-    i++; // Inkrementierung des Zählers für den nächsten Durchgang
+while (i <= limit) { 
+    System.out.println(i); 
+    i++; 
 }
 ```
 
-In diesem Beispiel wird der Block von Code innerhalb der While-Schleife so lange ausgeführt, wie `i` kleiner ist als die Länge des Arrays `numbers`. In jedem Durchgang wird die Summe `sum3` um das aktuelle Element `numbers[i]` erhöht, und der Zähler `i` wird inkrementiert.
+In diesem Beispiel wird die Schleife von 1 bis zum `Limit` (5) durchlaufen und gibt die Werte 1, 2, 3, 4 und 5 aus.
 
 ### Do-While-Schleife:
 Die Do-While-Schleife führt einen Block von Code mindestens einmal aus und überprüft dann eine Bedingung, um zu entscheiden, ob der Block wiederholt werden soll.
 
 ```java
-int[] numbers = {5, 10, 15};
-int sum4 = 0;
-int i = 0; // Initialisierung des Zählers
+int limit = 5;
+int i = 1; 
 
 do {
-    sum4 += numbers[i]; // Code, der in jedem Durchgang ausgeführt wird
-    i++; // Inkrementierung des Zählers für den nächsten Durchgang
-} while (i < numbers.length); // Bedingung für die Schleife
+    System.out.println(i); 
+    i++; 
+} while (i <= limit); 
 ```
 
-In diesem Beispiel wird der Block von Code innerhalb der Do-While-Schleife mindestens einmal ausgeführt, bevor die Bedingung `i < numbers.length` überprüft wird. Wenn die Bedingung wahr ist, wird der Block wiederholt, andernfalls wird die Schleife beendet.
+In diesem Beispiel wird der Block von Code innerhalb der Do-While-Schleife mindestens einmal ausgeführt, bevor die Bedingung `i <= limit` überprüft wird. Wenn die Bedingung wahr ist, wird der Block wiederholt, andernfalls wird die Schleife beendet
 
 ### Ternärer Operator:
 Der ternäre Operator ist eine kompakte Möglichkeit, eine bedingte Anweisung in einer einzigen Zeile auszudrücken. Es hat die folgende Syntax:
