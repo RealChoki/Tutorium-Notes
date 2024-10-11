@@ -1,6 +1,6 @@
 # Kapitel 5 Arrays
 
-## Allgemeine Arrays
+## Allgemein Arrays
 
 ### Explizites Initialisieren von Arrays:
 - Wenn wir ein leeres Array mit 3 freien Plätzen haben:
@@ -30,10 +30,10 @@ int value = arr[2]; // Hier wird der Wert 9 abgerufen, da das dritte Element im 
 
 - Sie können den Wert eines Elements im Array ändern, indem Sie auf das Element zugreifen und ihm einen neuen Wert zuweisen. Zum Beispiel:
 ```java
-arr[1] = 7; // Ändert das zweite Element des Arrays zu 7.
+arr[1] = 7; // Ändert das zweite Element des Arrays von 6 zu 7.
 ```
 
-## Mehrdimensionale Arrays
+## Allgemein Mehrdimensionale Arrays
 
 ### Explizites Initialisieren von mehrdimensionalen Arrays:
 - Wenn wir ein leeres 2D-Array mit 3 Reihen und 2 Spalten haben:
@@ -54,7 +54,7 @@ arr[2][1] = 6;
 ### Implizites Initialisieren von mehrdimensionalen Arrays:
 - Aber wir können auch direkt beim Erstellen des Arrays Werte zuweisen:
 ```java
-int[][] arr3x2 = {{1, 2}, {2, 3}, {3, 4}};
+int[][] arr3x2 = {{1, 2}, {3, 4}, {5, 6}};
 ```
 
 ### Zugriff auf Elemente von mehrdimensionalen Arrays:
@@ -93,4 +93,66 @@ for (int num : arr) {
   System.out.println(num + " "); // Hier wird 1 2 3 4 ausgegeben.
 }
 ```
+
+## Iteration durch Mehrdimensionale Arrays:
+
+### Länge eines mehrdimensionalen Arrays:
+- Mehrdimensionale Arrays sind Arrays von Arrays. Die Länge des äußeren Arrays (die Anzahl der Zeilen) kann mit `arr.length` abgerufen werden, während die Länge eines inneren Arrays (die Anzahl der Spalten) mit `arr[0].length` ermittelt werden kann (vorausgesetzt, alle inneren Arrays haben die gleiche Länge).
+
+```java
+int[][] matrix = {
+  {1, 2},
+  {3, 4},
+  {5, 6}
+};
+
+int zeilen = matrix.length;        // Anzahl der Zeilen: 3
+int spalten = matrix[0].length;    // Anzahl der Spalten: 2
+```
+
+### Verschachtelte For-Schleifen zur **Transposition** eines mehrdimensionalen Arrays:
+
+- Die Transposition eines 2D-Arrays bedeutet, dass die Elemente der Zeilen zu Spalten werden und umgekehrt. Wenn du eine Matrix `m x n` hast, wird sie in eine Matrix `n x m` umgewandelt.
+
+```java
+int[][] matrix = {
+  {1, 2, 3},
+  {4, 5, 6},
+  {7, 8, 9}
+};
+
+// Erstellen eines neuen Arrays für die transponierte Matrix
+int[][] transposed = new int[matrix[0].length][matrix.length];
+
+for (int i = 0; i < matrix.length; i++) {        // Äußere Schleife für die Zeilen
+  for (int j = 0; j < matrix[i].length; j++) {   // Innere Schleife für die Spalten
+    transposed[j][i] = matrix[i][j];             // Tausche Zeilen und Spalten
+  }
+}
+
+// Transponierte Matrix anzeigen
+System.out.println("Die transponierte Matrix ist:");
+for (int i = 0; i < transposed.length; i++) {
+  for (int j = 0; j < transposed[i].length; j++) {
+    System.out.print(transposed[i][j] + " ");
+  }
+  System.out.println();
+}
+```
+
+Das Programm transponiert die ursprüngliche Matrix `matrix`:
+```
+1 2 3 
+4 5 6 
+7 8 9
+```
+
+Wird umgewandelt in:
+```
+1 4 7 
+2 5 8 
+3 6 9
+```
+
+- In der inneren Schleife wird jedes Element `matrix[i][j]` in die Position `transposed[j][i]` gesetzt, wodurch die Zeilen zu Spalten und die Spalten zu Zeilen werden.
 
