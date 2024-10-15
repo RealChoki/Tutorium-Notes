@@ -3,14 +3,14 @@ package unsolved;
 public class MarioEinfach {
     /* Die Ausgabe kann wie folgt aussehen wenn numberOfRows = 8:
      *
-     * #
-     * ##
-     * ###
-     * ####
-     * #####
-     * ######
+     *       #
+     *      ##
+     *     ###
+     *    ####
+     *   #####
+     *  ######
      * #######
-     * ########
+     *########
      */
     public static void main(String[] args) {
         // TODO: Erstellen Sie eine Variable namens "numberOfRows" und weisen Sie die Zahl 8 zu.

@@ -3,14 +3,14 @@ package solved;
 public class MarioEinfachSolved {
     /* Die Ausgabe kann wie folgt aussehen wenn numberOfRows = 8:
      *
-     * #
-     * ##
-     * ###
-     * ####
-     * #####
-     * ######
+     *       #
+     *      ##
+     *     ###
+     *    ####
+     *   #####
+     *  ######
      * #######
-     * ########
+     *########
      */
     public static void main(String[] args) {
         // Erstellen Sie eine Variable namens "numberOfRows" und weisen Sie die Zahl 8 zu.
@@ -28,9 +28,13 @@ public class MarioEinfachSolved {
      * @param numberOfRows Die Anzahl der Zeilen im Muster.
      */
     public static void printPattern(int numberOfRows) {
-        for (int i = 0; i < numberOfRows; i++) {
+        for (int i = 0; i <= numberOfRows; i++) {
+            // Druckt Leerzeichen für die linke Seite der Pyramide
+            for (int j = 0; j < numberOfRows - i; j++) {
+                System.out.print(" ");
+            }
             // Druckt die "#" für die Pyramide
-            for (int j = 0; j <= i; j++) {
+            for (int j = 0; j < i; j++) {
                 System.out.print("#");
             }
             System.out.println(); // Neue Zeile nach jeder Reihe
