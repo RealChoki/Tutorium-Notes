@@ -1,4 +1,4 @@
-# Kapitel 6 Klassen
+# Kapitel 6 Objektorientierung 1
 
 ## Einführung in Klassen und Objekte
 

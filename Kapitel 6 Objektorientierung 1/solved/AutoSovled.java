@@ -1,4 +1,3 @@
-package auto;
 /* Die Ausgabe kann wie folgt aussehen:
 
  * Vor Änderungen:
@@ -10,16 +9,19 @@ package auto;
  * Marke: Tesla
  * Farbe: Rot
  * Geschwindigkeit: 20
+ * 
+ * Nach 60 km/h Bremsen:
+ * Geschwindigkeit: 0
  */
 
-public class Auto2 {
+public class AutoSovled {
     // TODO: 3 Attribute (Marke, Farbe, Geschwindigkeit) definieren
     private String marke;
     private String farbe;
     private int geschwindigkeit;
 
     // TODO: Einen Konstruktor mit 3 Parametern (Marke, Farbe, Geschwindigkeit) erstellen
-    public Auto2(String marke, String farbe, int geschwindigkeit) {
+    public AutoSovled(String marke, String farbe, int geschwindigkeit) {
         this.marke = marke;
         this.farbe = farbe;
         this.geschwindigkeit = geschwindigkeit;
@@ -61,7 +63,7 @@ public class Auto2 {
 
     public static void main(String[] args) {
         // TODO: Erstellen Sie ein Auto2-Objekt namens meinAuto2 mit dem Konstruktor (z.B. Volkswagen, Blau, 0)
-        Auto2 meinAuto2 = new Auto2("Volkswagen", "Blau", 0);
+        AutoSovled meinAuto2 = new AutoSovled("Volkswagen", "Blau", 0);
 
         // TODO: Geben Sie die Attribute des Auto2s auf die Konsole aus
         System.out.println("Vor Änderungen:");
@@ -86,5 +88,11 @@ public class Auto2 {
         System.out.println("Marke: " + meinAuto2.getMarke());
         System.out.println("Farbe: " + meinAuto2.getFarbe());
         System.out.println("Geschwindigkeit: " + meinAuto2.getGeschwindigkeit());
+
+        // TODO: Bremsen Sie das Auto um 60 km/h.
+        meinAuto2.bremsen(60);
+        
+        // TODO: Geben Sie die Geschwindigkeit des Autos nach dem Bremsen aus.
+        System.out.println("\nGeschwindigkeit: " + meinAuto2.getGeschwindigkeit());
     }
 }

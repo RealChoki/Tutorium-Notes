@@ -1,4 +1,3 @@
-package auto;
 /* Die Ausgabe kann wie folgt aussehen:
 
  * Vor Änderungen:
@@ -10,6 +9,9 @@ package auto;
  * Marke: Tesla
  * Farbe: Rot
  * Geschwindigkeit: 20
+ * 
+ * Nach 60 km/h Bremsen:
+ * Geschwindigkeit: 0
  */
 
 public class Auto {
@@ -42,6 +44,10 @@ public class Auto {
         // TODO: Ändern Sie die Marke des Autos in "Tesla"
 
         // TODO: Geben Sie die Attribute des Autos nach den Änderungen aus
+
+        // TODO: Bremsen Sie das Auto um 60 km/h.
+
+        // TODO: Geben Sie die Geschwindigkeit des Autos nach dem Bremsen aus.
 
     }
 }
