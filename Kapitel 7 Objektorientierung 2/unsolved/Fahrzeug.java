@@ -1,5 +1,3 @@
-// TODO: package bestimmen
-
 // TODO: Definiere eine Basisklasse namens "Fahrzeug" mit den folgenden Objekt Attributen (marke, baujahr) und einen klassen attribute (static) "anzahlFahrzeuge".
 public class Fahrzeug {
 

@@ -1,6 +1,3 @@
-// TODO: package bestimmen
-package auto2done;
-
 // TODO: Definiere eine Basisklasse namens "Fahrzeug" mit den folgenden Objekt Attributen (marke, baujahr) und einen klassen attribute (static) "anzahlFahrzeuge".
 public class Fahrzeug {
     private String marke;

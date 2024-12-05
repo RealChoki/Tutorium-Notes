@@ -1,3 +1,10 @@
 {
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.sourcePaths": [
+        "Kapitel 7 Objektorientierung 2/auto2 unsolved",
+        "Kapitel 6 Objektorientierung 1/unsolved",
+        "Kapitel 6 Objektorientierung 1/solved",
+        "Kapitel 5 Arrays",
+        "Kapitel 7 Objektorientierung 2/auto2 solved"
+    ]
 }

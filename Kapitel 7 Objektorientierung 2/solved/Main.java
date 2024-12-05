@@ -1,5 +1,3 @@
-// TODO: package bestimmen
-package auto2done;
 /* Die Ausgabe kann wie folgt aussehen:
 
  * Erstes Fahrzeug:
@@ -44,6 +42,9 @@ public class Main {
         meinLkw.starten();
 
         // TODO: Versuche die Methode "starten" für beide Fahrzeuge zu überschreiben, damit die ausgabe passender für beide Fahrzeuge ist. 
-        // TODO: Was passiert? warum? Wie kannst du es korregieren ?
+        // TODO: Was passiert? warum? Wie kannst du es korregieren?
+        // Was passiert? beide Methoden in den Klassen Auto und Lkw werden mit den Fehler markiert "Cannot override the final method from Fahrzeug"
+        // warum? weil die Methode "starten" in der Klasse "Fahrzeug" als "final" deklariert wurde, was bedeutet, dass sie nicht überschrieben oder geändert werden kann.
+        // Wie kannst du es korregieren? Entferne das Schlüsselwort "final" von der Methode "starten" in der Klasse "Fahrzeug".
     }
 }

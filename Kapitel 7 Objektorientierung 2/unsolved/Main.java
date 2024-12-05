@@ -1,5 +1,3 @@
-// TODO: package bestimmen
-
 /* Die Ausgabe kann wie folgt aussehen:
 
  * Erstes Fahrzeug:

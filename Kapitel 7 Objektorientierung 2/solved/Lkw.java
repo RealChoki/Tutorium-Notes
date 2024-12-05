@@ -1,6 +1,3 @@
-// TODO: package bestimmen
-package auto2done;
-
 // TODO: Erstelle eine weitere abgeleitete Klasse namens "Lkw", die ebenfalls von der Klasse "Fahrzeug" erbt. 
 // TODO: Füge der Klasse "Lkw" ein zusätzliches Attribut "ladung" hinzu.
 public class Lkw extends Fahrzeug {

@@ -1,5 +1,3 @@
-// TODO: package bestimmen
-
 // TODO: Erstelle eine abgeleitete Klasse namens "Lkw", die von der Klasse "Fahrzeug" erbt. 
 // TODO: Füge der Klasse "Lkw" ein zusätzliches Attribut "ladung" hinzu.
 public class Lkw  {
