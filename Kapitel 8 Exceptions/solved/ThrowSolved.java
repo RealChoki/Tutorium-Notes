@@ -2,11 +2,10 @@ package exceptions;
 
 public class ThrowSolved {
     public static void main(String[] args) {
-        Throw main = new Throw();
-        main.calculate(10, 0);
+        calculate(10, 0);
     }
 
-    private void calculate(int dividend, int divisor) {
+    private static void calculate(int dividend, int divisor) {
         try {
             divide(dividend, divisor);
         } catch (ArithmeticException e) {
@@ -14,13 +13,13 @@ public class ThrowSolved {
         }
     }
 
-    private void divide(int dividend, int divisor) throws ArithmeticException {
+    private static void divide(int dividend, int divisor) throws ArithmeticException {
         validate(divisor);
         int result = dividend / divisor;
         System.out.println("Result: " + result);
     }
 
-    private void validate(int divisor) throws ArithmeticException {
+    private static void validate(int divisor) throws ArithmeticException {
         if (divisor == 0) {
             throw new ArithmeticException(); // direct
         }
