@@ -1,6 +1,11 @@
 package exceptions;
 
 public class ExceptionSolved {
+    /* Die Ausgabe kann wie folgt aussehen:
+
+     * Es existiert kein viertes Element
+     * blub
+     */
     public static void main(String[] args) {
         // TODO: Erstellen Sie ein Array mit drei Elementen (z.B. zahlen)
         int[] array = {1, 2, 3};
