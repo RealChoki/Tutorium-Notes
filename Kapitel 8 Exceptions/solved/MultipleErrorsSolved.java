@@ -1,6 +1,6 @@
 package exceptions;
 
-public class MultipleErrors {
+public class MultipleErrorsSolved {
     public static void main(String[] args) {
         try {
             processArray(new int[]{1, 2, 3}, "123", new String[]{"1"});

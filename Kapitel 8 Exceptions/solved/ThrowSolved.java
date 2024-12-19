@@ -1,6 +1,6 @@
 package exceptions;
 
-public class Throw {
+public class ThrowSolved {
     public static void main(String[] args) {
         Throw main = new Throw();
         main.calculate(10, 0);
