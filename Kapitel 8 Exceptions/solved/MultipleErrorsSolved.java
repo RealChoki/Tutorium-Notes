@@ -2,7 +2,7 @@ package exceptions;
 
 public class MultipleErrorsSolved {
     /* Die Ausgabe kann wie folgt am ende aussehen:
-
+     *
      * Ich sollte keine fehler ueber mich haben
      */
     public static void main(String[] args) {

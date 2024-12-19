@@ -1,4 +1,8 @@
 public class MultipleErrors {
+    /* Die Ausgabe kann wie folgt am ende aussehen:
+     *
+     * Ich sollte keine fehler ueber mich haben
+     */
     public static void main(String[] args) {
         try {
             processArray(new int[]{1, 2, 3}, "abc", new String[]{});

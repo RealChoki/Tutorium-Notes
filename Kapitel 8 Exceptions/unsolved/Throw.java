@@ -1,4 +1,8 @@
 public class Throw {
+    /* Die Ausgabe kann wie folgt aussehen wenn der dividend 10 ist und der divisor 2 ist:
+     *
+     * Result: 5
+     */
     public static void main(String[] args) {
         calculate(10, 0);
     }

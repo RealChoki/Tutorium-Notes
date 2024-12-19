@@ -1,4 +1,9 @@
 public class Exception {
+    /* Die Ausgabe kann wie folgt aussehen:
+     *
+     * Es existiert kein viertes Element
+     * blub
+     */
     // TODO: Erstellen sie eine Klasse z.B. `Exception` die eine main Methode entaehlt.
     // TODO: Erstellen Sie ein Array mit drei Elementen (z.B. zahlen).
     // TODO: Versuchen `try` Sie, auf das nicht existierende vierte Element des Arrays zuzugreifen.

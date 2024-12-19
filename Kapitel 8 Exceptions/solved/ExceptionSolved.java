@@ -2,7 +2,7 @@ package exceptions;
 
 public class ExceptionSolved {
     /* Die Ausgabe kann wie folgt aussehen:
-
+     *
      * Es existiert kein viertes Element
      * blub
      */
