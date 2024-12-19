@@ -3,7 +3,9 @@ public class MultipleErrors {
         try {
             processArray(new int[]{1, 2, 3}, "abc", new String[]{});
         } 
-        // TODO: Schreiben Sie drei catch-Blöcke für die drei Fehler, die in der Methode processArray auftreten. Jeder catch-Block sollte seine Fehler Nummer ausgeben z.B. "Fehler 1 ist aufgetreten". Suchen sie die drei passende Exceptions (ArrayIndexOutOfBoundsException, NullPointerException, NumberFormatException, ArithmeticException, IllegalArgumentException).
+        // TODO: Schreiben Sie drei catch-Blöcke für die drei Fehler, die in der Methode processArray auftreten. 
+        // TODO: Jeder catch-Block sollte seine Fehler Nummer ausgeben z.B. "Fehler 1 ist aufgetreten". Suchen sie die 
+        // TODO: drei passende Exceptions (ArrayIndexOutOfBoundsException, NullPointerException, NumberFormatException, ArithmeticException, IllegalArgumentException).
         
         // TODO: Korregieren sie das code in processArray sodass nur finally augegeben wird.
         finally {
